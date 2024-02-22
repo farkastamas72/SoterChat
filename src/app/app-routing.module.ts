@@ -6,7 +6,6 @@ import { ProfileComponent } from './profile/profile.component';
 import { UsernameComponent } from './username/username.component';
 import { LoginComponent } from './login/login.component';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
-import { VerifyEmailComponent } from './verify-email/verify-email.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent},
@@ -17,7 +16,6 @@ const routes: Routes = [
 
   //forgot password
   {path:'forgot-password', component:ForgotPasswordComponent},
-  {path:'verify-email', component:VerifyEmailComponent},
 
 
   {path: '', component:LoginComponent},

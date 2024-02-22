@@ -24,7 +24,6 @@ import { UsernameComponent } from './username/username.component';
 import { ProfileComponent } from './profile/profile.component';
 import { LoginComponent } from './login/login.component';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
-import { VerifyEmailComponent } from './verify-email/verify-email.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +35,6 @@ import { VerifyEmailComponent } from './verify-email/verify-email.component';
     ProfileComponent,
     LoginComponent,
     ForgotPasswordComponent,
-    VerifyEmailComponent,
   ],
   imports: [
     BrowserModule,
