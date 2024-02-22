@@ -1,0 +1,25 @@
+
+<div class="container">
+<div class="divek" [ngClass]="message.user==userName? 'jobb' : '' " *ngFor="let message of messages">
+
+<div class="messageDetails">{{message.user}} {{message.time}}</div>
+
+<ng-container *ngIf="message.user!=userName; else en">
+<div>{{message.message}}</div>
+</ng-container>
+
+<ng-template #en>
+    {{message.message}}
+    <button (click)="updateMessage(message)">Save</button>
+    <button (click)="deleteMessage(message)">Delete</button>
+</ng-template>
+
+</div>
+<br> <br><br><br>
+<div class="form-group">
+    <label for="exampleFormControlTextarea1">Example textarea</label>
+    <textarea [(ngModel)]="newMessage" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+<button (click)="addMessage()">Add Message</button>
+
+</div>

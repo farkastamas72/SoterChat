@@ -1,0 +1,8 @@
+.classic-gradient {
+    background-image: 
+      radial-gradient(
+        farthest-corner circle at 50% 50%, 
+        #0ff -34% -34%, #00b5ff 36% 36%
+      )
+    ;
+  }

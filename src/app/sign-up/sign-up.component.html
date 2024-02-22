@@ -1,0 +1,34 @@
+<div class="body">
+    <img [src]="backgroundBlobs" alt="" class="backgroundBlobs">
+    <img [src]="backgroundRobot" alt="" class="backgroundRobot">
+    <div class="sign-up-container">
+    
+        <div class="logo">
+            <img [src]="logoPhoto" alt="logo">  </div>
+    
+        <div class="soterchat-text-picture elements">
+            <img [src]="soterPhoto" alt="My Image" class="soterPhotoText">
+        </div>
+    
+    
+        <form #LoginForm="ngForm" class="elements">
+            <div class="email form-elements">
+                <input [(ngModel)]="email" type="text" id="email" name="email" placeholder="E-mail"/>
+            </div>
+            <div class="password form-elements">
+                <input [(ngModel)]="password"  type="password" ngModel id="password" name="password" placeholder="Password"/>
+            </div>
+            <div class="submit-button form-elements">
+                <button (click)="register()" class="input-main-class">Register</button>
+            </div>
+            <hr style="width:70%; margin: auto;" />
+            <p style="cursor: pointer;" class="login-p">
+                Already have an account?
+            </p>
+        </form>
+    
+    
+    
+    
+    </div>
+    </div>

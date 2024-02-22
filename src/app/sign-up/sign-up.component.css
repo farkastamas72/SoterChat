@@ -1,0 +1,102 @@
+  *{
+    --white-fc: #fcfcfc;
+
+    --dark-blue: #26597E;
+    --light-blue:#47A6E8;
+    --light-babyblue:#BEE8F8;
+
+    overflow: hidden;
+  }
+
+  /* Placeholder color */
+
+::placeholder {
+    color: var(--dark-blue);
+    opacity: 0.9; /* Firefox */
+    font-size: 18px;
+  }
+  
+  ::-ms-input-placeholder { /* Edge 12 -18 */
+    color: var(--dark-blue);
+    opacity: 0.9; /* Firefox */
+  }
+
+
+/* Photo base settings */
+
+.soterPhotoText {
+    height: 108px;
+    width: 389;
+}
+
+.body{
+    height: 100dvh;
+    background-color: var(--white-fc);
+}
+
+/* Main container settings */
+.sign-up-container{
+    height: 80dvh;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+
+}
+
+.elements {
+    margin: 10px;
+}
+
+
+/* Forms input element settings */
+.password > input, .email > input{
+    width: 360px;
+    padding: 1rem 0.5rem;
+    border-color: var(--light-blue);
+    border-width: 2px;
+    border-radius: 7px;
+}
+
+input:focus {
+    color: var(--dark-blue);
+    opacity: 0.9; /* Firefox */
+    outline: none;
+  }
+
+.submit-button > input{
+    width: 360px;
+    padding: 1rem;
+    background-color: var(--light-blue);
+    border-color: var(--light-blue);
+    font-weight: 500;
+    color: var(--white-fc);
+    border-radius: 7px;
+}
+
+.form-elements {
+    margin: 10px;
+}
+
+
+
+/* BG Pictures */
+.backgroundRobot{
+    width: 35%;
+    top: 10rem;
+    position: absolute;
+    background:none;
+}
+
+.backgroundBlobs{
+    width: 35%;
+    position: absolute;
+    background:none;
+}
+
+
+
+.login-p { 
+    color: var(--dark-blue);
+    text-align: center;
+}

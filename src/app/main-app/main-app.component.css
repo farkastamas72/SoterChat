@@ -1,0 +1,8 @@
+
+.jobb {
+    align-items: end;
+}
+.divek {
+    display: flex;
+    flex-direction: column;
+}

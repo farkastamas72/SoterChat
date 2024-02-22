@@ -35,6 +35,7 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -98,6 +99,23 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "version": 2
+          },
+          "configurations": {
+            "production": {
+              "buildTarget": "soterchat:build:production",
+              "serveTarget": "soterchat:serve:production"
+            },
+            "development": {
+              "buildTarget": "soterchat:build:development",
+              "serveTarget": "soterchat:serve:development"
+            }
+          },
+          "defaultConfiguration": "production"
         }
       }
     }

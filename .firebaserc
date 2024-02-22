@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "soterchat-app": {
+      "hosting": {
+        "soterchat": [
+          "soterchat-app"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "soterchat-app"
+  }
+}
