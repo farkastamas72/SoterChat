@@ -1,8 +1,100 @@
+.main-container {
+    height: 100vh;
+    background-color: #e5e5f7;
+    background-image: radial-gradient(#47a6e8 2px, transparent 2px), radial-gradient(#47a6e8 2px, #ffffff 2px);
+    background-size: 80px 80px;
+    background-position: 0 0, 40px 40px;
+}
 
 .jobb {
     align-items: end;
 }
+
+.bal {
+    align-items: start;
+    margin-left: 1rem;
+}
+
+.bal .message {
+    margin-left: 2rem;
+    background-color: rgba(212, 212, 212, 0.525);
+    max-width: 30%;
+    text-align: left;
+}
+
+.bal .message:hover {
+    background-color: rgba(230, 230, 230, 0.525);
+}
+
+.jobb .message {
+    max-width: 30%;
+    margin-right: 2rem;
+    background-color: #3b8bc5da;
+    text-align: left;
+    float: left;
+}
+
+.jobb .message:hover {
+    background-color: #4699d5da;
+}
+
+.message {
+    padding: 0.5rem 1rem;
+    border-radius: 2%;
+}
+
 .divek {
     display: flex;
     flex-direction: column;
+}
+
+.msgContainer {
+    overflow-y: scroll;
+}
+
+.time {
+    font-size: 0.7rem;
+    color: rgba(0, 0, 0, .35);
+    margin-top: 3px;
+    cursor: default;
+    user-select: none;
+}
+
+.frame {
+    background-color: #fff;
+    height: 100vh;
+    outline: #204b6ada 1px solid;
+    overflow-y: scroll;
+}
+
+.messageContainer {
+    position: sticky;
+    bottom: 0;
+}
+
+.deleteMessageIcon {
+    color: rgb(199, 19, 19);
+    vertical-align: middle;
+    font-size: 20px;
+}
+
+.deleteMessageIcon:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    transition: 300ms;
+}
+
+.send-button {
+    background-color: #26597eda;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.send-button:hover {
+    background-color: #204b6ada;
 }

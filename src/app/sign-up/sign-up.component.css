@@ -1,14 +1,9 @@
   *{
     --white-fc: #fcfcfc;
-
     --dark-blue: #26597E;
     --light-blue:#47A6E8;
     --light-babyblue:#BEE8F8;
-
-    overflow: hidden;
   }
-
-  /* Placeholder color */
 
 ::placeholder {
     color: var(--dark-blue);
@@ -16,13 +11,10 @@
     font-size: 18px;
   }
   
-  ::-ms-input-placeholder { /* Edge 12 -18 */
+::-ms-input-placeholder { /* Edge 12 -18 */
     color: var(--dark-blue);
     opacity: 0.9; /* Firefox */
   }
-
-
-/* Photo base settings */
 
 .soterPhotoText {
     height: 108px;
@@ -34,7 +26,6 @@
     background-color: var(--white-fc);
 }
 
-/* Main container settings */
 .sign-up-container{
     height: 80dvh;
    display: flex;
@@ -48,8 +39,6 @@
     margin: 10px;
 }
 
-
-/* Forms input element settings */
 .password > input, .email > input{
     width: 360px;
     padding: 1rem 0.5rem;
@@ -78,11 +67,8 @@ input:focus {
     margin: 10px;
 }
 
-
-
-/* BG Pictures */
 .backgroundRobot{
-    width: 35%;
+    width: 30%;
     top: 10rem;
     position: absolute;
     background:none;
@@ -94,9 +80,32 @@ input:focus {
     background:none;
 }
 
-
-
 .login-p { 
     color: var(--dark-blue);
     text-align: center;
 }
+
+.sign-up {
+    width: 360px;
+    padding: 1rem;
+    background-color: var(--light-blue);
+    border-color: var(--light-blue);
+    font-weight: 500;
+    color: var(--white-fc);
+    border-radius: 7px;
+
+}
+
+.alert-danger {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #edd4d7;
+    border-color: #e6c3c7;
+    color: #660e18;
+  }

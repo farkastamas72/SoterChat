@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { trigger, style, animate, transition } from '@angular/animations';
+import { BaseService } from './base.service';
+import { AuthService } from './auth.service';
 
-import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 
 @Component({
   selector: 'app-root',
@@ -9,4 +9,11 @@ import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
   styleUrl: './app.component.css',
 })
 export class AppComponent {
+
+  constructor(private base:BaseService,private auth:AuthService){
+
+  }
+
+  
+
 }

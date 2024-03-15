@@ -26,4 +26,9 @@ uzenetek: AngularFireList<any>;
    deleteMessage(body:any){
     this.uzenetek.remove(body.key)
    }
+
+   alrDeletedMessage(body:any){
+    this.uzenetek.update(body.key,body)
+   }
+
 }

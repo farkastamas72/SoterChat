@@ -1,0 +1,172 @@
+.main-container {
+    height: 100dvh;
+    background-color: #e5e5f7;
+    opacity: 1;
+    background-image:  radial-gradient(#47a6e8 2px, transparent 2px), radial-gradient(#47a6e8 2px, #ffffff 2px);
+    background-size: 80px 80px;
+    background-position: 0 0,40px 40px;
+}
+
+.padding {
+    padding: 3rem !important
+}
+
+.user-card-full {
+    overflow: hidden;
+}
+
+.card {
+    border-radius: 5px;
+    -webkit-box-shadow: 0 1px 20px 0 rgba(69,90,100,0.08);
+    box-shadow: 0 1px 20px 0 rgba(69,90,100,0.08);
+    border: none;
+    margin-bottom: 30px;
+}
+
+
+.user-card-full .user-profile {
+    border-radius: 5px 0 0 5px;
+}
+
+.bg-c-lite-blue {
+    background: -webkit-gradient(linear, left top, right top, from(#63ddf2), to(#85c4f5));
+    background: linear-gradient(to right, #619abb, #42b3ff);
+}
+
+.user-profile {
+    padding: 20px 0;
+}
+
+.card-block {
+    padding: 1.25rem;
+    
+}
+
+.m-b-25 {
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.img-radius {
+    border-radius: 5px;
+    
+}
+ 
+h6 {
+    font-size: 20px;
+}
+
+.card .card-block p {
+    line-height: 25px;
+    
+}
+
+@media only screen and (min-width: 1400px){
+p {
+    font-size: 14px;
+}
+}
+
+.card-block {
+    padding: 1.25rem;
+    
+}
+
+.b-b-default {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+
+.card .card-block p {
+    line-height: 25px;
+}
+
+
+
+.text-muted {
+    color: #919aa3 !important;
+}
+
+.img-container{
+    position: relative;
+}
+
+
+.edit-button {
+    position: absolute;
+    top: 0;
+    left: 80%;
+    background-color: #2062b7;
+    border-color: #09223b;
+    border: 1;
+    border-radius: 50%;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 0.5rem;
+
+  
+}
+
+.edit-button:hover,
+.edit-button:focus { 
+  background-color: #16437E;
+  color: #ffffff;
+}
+
+.disabled-elements{
+    line-height: 1rem;
+    padding: 0.5rem;
+    border:none;
+    border-radius:2%;
+}
+
+.noEditPassword{
+border: 1px solid rgb(167, 177, 182);
+}
+
+.editPassword{
+    border: 1px solid white;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+}
+
+.save-elements:hover{
+opacity: 0.9;
+}
+
+.alert-success {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    color: #155724;
+  }
+
+  .alert-danger {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #edd4d7;
+    border-color: #e6c3c7;
+    color: #660e18;
+  }

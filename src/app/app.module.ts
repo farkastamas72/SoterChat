@@ -4,7 +4,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { SignInComponent } from './sign-in/sign-in.component';
 
 import { FormsModule } from '@angular/forms';
 
@@ -20,21 +19,21 @@ import { FormsModule } from '@angular/forms';
 
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { MainAppComponent } from './main-app/main-app.component';
-import { UsernameComponent } from './username/username.component';
 import { ProfileComponent } from './profile/profile.component';
 import { LoginComponent } from './login/login.component';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { AngularFireStorageModule } from '@angular/fire/compat/storage';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SignInComponent,
     SignUpComponent,
     MainAppComponent,
-    UsernameComponent,
     ProfileComponent,
     LoginComponent,
     ForgotPasswordComponent,
+    NavbarComponent,
   ],
   imports: [
     BrowserModule,
@@ -45,7 +44,8 @@ import { ForgotPasswordComponent } from './forgot-password/forgot-password.compo
 
    AngularFireDatabaseModule,
    AngularFireModule.initializeApp(Environments.firebaseConfig),
-   AngularFireAuthModule,
+   AngularFireStorageModule,
+   
   ],
   providers: [],
   bootstrap: [AppComponent]

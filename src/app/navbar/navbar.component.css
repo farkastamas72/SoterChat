@@ -1,0 +1,49 @@
+.sidenav {
+    height: 100dvh;
+    width: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #26597eda;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+.active {
+    background-color: #3798de;
+}
+
+.sidenav a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    display: block;
+    font-weight: 500;
+}
+
+.sidenav a:hover {
+    background-color: #3c98d9;
+}
+
+.content {
+    margin-left: 200px;
+    padding: 20px;
+}
+
+.sidenav a:last-child {
+    margin-top: auto;
+}
+
+@media only screen and (max-width: 1755px) {
+    .sidenav {
+        width: 150px;
+    }
+}
+
+@media only screen and (max-width: 1625px) {
+    .sidenav {
+        width: 100px;
+    }
+}

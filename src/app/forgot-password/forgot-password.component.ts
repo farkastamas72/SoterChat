@@ -14,6 +14,7 @@ export class ForgotPasswordComponent {
   backgroundBlobs:string ="assets/background-bubbles.png";
 
   email: string = '';
+  message: string;
 
   constructor(private auth:AuthService) {}
 
