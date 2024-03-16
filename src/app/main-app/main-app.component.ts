@@ -97,6 +97,7 @@ ngOnInit(): void {
 
 }
 
+
 addMessage(){
   const auth = getAuth();
   const user = auth.currentUser;

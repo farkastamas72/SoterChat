@@ -36,7 +36,7 @@
     <br><br><br><br>
     <div class="form-group typezone">
       Send message:
-      <textarea #messageTextarea (keydown.enter)="addMessage()" [(ngModel)]="newMessage" class="form-control" id="message" rows="3">
+      <textarea #messageTextarea maxlength="1000" (keydown.enter)="addMessage()" [(ngModel)]="newMessage" class="form-control" id="message" rows="3">
         
       </textarea>
       <div class="send-actions d-flex justify-content-end">
